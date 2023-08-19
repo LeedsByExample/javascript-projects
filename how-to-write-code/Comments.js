@@ -10,3 +10,8 @@
    comments. */
 
    console.log("Comments make your code more readable by others.");
+
+   //this is me practicing my comments
+   /* look at me go
+         now I'm feeling
+            funky fresh */
