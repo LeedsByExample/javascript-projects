@@ -6,7 +6,7 @@ let superChimpOne = {
    astronautID: 1,
    move: function () {return Math.floor(Math.random()*11)}
 };
-console.log(superChimpOne);
+console.log(superChimpOne.move());
 
 let salamander = {
    name: "Lacey",
@@ -54,18 +54,41 @@ crewReports(dog);
 
 //Make a crew fitness race function
 
+
+
+
+// function fitnessTest(crew) {
+//    let results = [];
+//    let numSteps = [];
+//    let turns = [];
+//    for (let i = 0; i < crew.length; i++) {
+//       numSteps = 0;
+//       turns = 0;
+//          while(numSteps < 20) {
+//             numSteps += crew[i].move();
+//             turns++;
+//          }
+//          results.push(`${crew[i].name} took ${turns} to take 20 steps.`);
+//    }
+//    return results;
+// }
+
+// fitnessTest(crew);
+
+
+
 function fitnessTest(candidates){
    let results = [], numSteps, turns;
    for (let i = 0; i < candidates.length; i++){
-       numSteps = 0;
-       turns = 0;
-         while(numSteps < 20){
+      numSteps = 0;
+      turns = 0;
+      while(numSteps < 20){
          numSteps += candidates[i].move();
          turns++;
-       }
-       results.push(`${candidates[i].name} took ${turns} turns to take 20 steps.`);
-   }
+      }
+      results.push(`${candidates[i].name} took ${turns} turns to take 20 steps.`);
+   }  
    return results;
   }
 
-fitnessTest(crew);
+console.log(fitnessTest(crew));

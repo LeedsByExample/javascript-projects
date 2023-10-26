@@ -1,10 +1,25 @@
+let idNumbers = [291, 414, 503, 599, 796, 890];
+
 // Code your selectRandomEntry function here:
-
-
+function selectRandomEntry(numbers) {
+  let index = "";
+  index = Math.floor(Math.random()*numbers.length);
+  return numbers[index];
+}
+console.log(selectRandomEntry(idNumbers));
 // Code your buildCrewArray function here:
 
+let idSelection = [];
 
-let idNumbers = [291, 414, 503, 599, 796, 890];
+while (idSelection.length < 3) {
+  if (idSelection.includes(291 || 414 || 503 || 599 || 796 || 890)) {
+    break;
+  } else {
+    idSelection += selectRandomEntry(idNumbers);
+  }
+}
+console.log(idSelection);
+//arrayName.includes(item)
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {

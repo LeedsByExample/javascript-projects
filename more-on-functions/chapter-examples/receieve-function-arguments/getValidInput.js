@@ -14,7 +14,14 @@ function getValidInput(prompt, isValid) {
 
 // TODO 1: write a validator 
 // that ensures input starts with "a"
+let hasVowel = function(word) {
+  if (word.includes("a" || "e" || "i" || "o" || "u")) {
+    return true;
+  }
+  return false;
+};
 
+console.log(getValidInput("Choose a word that contains a vowel: ", hasVowel));
 // TODO 2: write a validator 
 // that ensures input is a vowel
 
