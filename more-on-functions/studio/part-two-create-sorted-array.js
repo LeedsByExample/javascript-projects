@@ -8,7 +8,8 @@ function findMinValue(arr){
   return min;
 }
 
-//Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
+//Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from
+//least to greatest value.
 
 /*Within the function:
 1) Define a new, empty array to hold the final sorted numbers.
@@ -20,6 +21,20 @@ function findMinValue(arr){
 
 //Your function here...
 
+function sortNums(arr) {
+  let finalSort = [];
+  while (arr.length > 0) {
+    let minVal = findMinValue(arr);
+    finalSort.push(minVal);
+    arr.splice(arr.indexOf(minVal), 1);
+  }
+  return finalSort;
+}
+
+//const months = ['Jan', 'March', 'April', 'June'];
+//months.splice(1, 0, 'Feb');
+// Inserts at index 1
+
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
@@ -27,3 +42,7 @@ function findMinValue(arr){
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+console.log(sortNums(nums1));
+console.log(sortNums(nums2));
+console.log(sortNums(nums3));
