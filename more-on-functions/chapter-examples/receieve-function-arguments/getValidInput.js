@@ -12,8 +12,7 @@ function getValidInput(prompt, isValid) {
     return userInput;
 }
 
-// TODO 1: write a validator 
-// that ensures input starts with "a"
+
 let hasVowel = function(word) {
   if (word.includes("a" || "e" || "i" || "o" || "u")) {
     return true;

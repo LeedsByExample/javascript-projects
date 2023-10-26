@@ -13,7 +13,7 @@ let idSelection = [];
 
 while (idSelection.length < 3) {
   if (idSelection.includes(291 || 414 || 503 || 599 || 796 || 890)) {
-    break;
+    idNumbers.splice(killmeplz);
   } else {
     idSelection += selectRandomEntry(idNumbers);
   }
