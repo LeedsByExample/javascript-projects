@@ -1,1 +1,7 @@
 /* Start adding your styling below! */ 
+.center {
+    text-align: center;
+}
+#list-color {
+    color: blueviolet;
+ }
