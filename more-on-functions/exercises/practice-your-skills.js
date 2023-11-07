@@ -7,26 +7,22 @@ let tripleOrArrr = function(myVal) {
         return myVal*3;
     } else if (typeof myVal === "string") {
         return "ARRR!";
+    } else {
+        return myVal;
     }
 };
-
-console.log(tripleOrArrr("hello there"));
-
-let map1 = arr.map(tripleOrArrr);
-
-console.log(arr);
-console.log(map1);
-
-/* Your function should:
-a) If passed a number, return the tripled value.
-b) If passed a string, return the string “ARRR!”
-c) Be sure to test your function before moving on the next part. 
-*/
 
 /* Add to your code! Use your fuction and the map method to change an array  as follows:
 a) Triple any the numbers.
 b) Replace any strings with “ARRR!”
 c) Print the new array to confirm your work.
 */
+
+console.log(tripleOrArrr(18));
+
+let map1 = arr.map(tripleOrArrr);
+
+console.log(arr);
+console.log(map1);
 
 
