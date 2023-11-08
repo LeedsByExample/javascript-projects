@@ -1,7 +1,24 @@
 /* Start adding your styling below! */ 
-.center {
+body {
+    background-color: yellow;
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.centered-header {
     text-align: center;
 }
+
+#cool-text {
+    color: blue;
+}
+
 #list-color {
-    color: blueviolet;
- }
+    color: bisque;
+}
