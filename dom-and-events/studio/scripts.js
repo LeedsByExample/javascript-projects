@@ -58,7 +58,7 @@ window.addEventListener("load", function() {
 
     let right = document.getElementById("right");
     right.addEventListener("click", function() {
-        if (rocketLeft >= 700) {
+        if (rocketLeft >= 550) {
             window.alert("Rocket cannot go any further right.");
         } else {
             rocketLeft += 10;
